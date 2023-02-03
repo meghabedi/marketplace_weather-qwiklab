@@ -4,16 +4,9 @@ constant: CONNECTION_NAME {
   value: "looker_block_connection"
 }
 
-# # Use local_dependency: To enable referencing of another project
-# # on this instance with include: statements
-#
-# local_dependency: {
-#   project: "name_of_other_project"
-# }
-
-remote_dependency: block-weather {
+remote_dependency: weather {
   url: "https://github.com/looker-open-source/block-weather"
-  ref: "master"
+  ref: "d9b54da9cac9946b6b23ef4c4bb1de965a7313ca"
   override_constant: CONNECTION_NAME {
     value: "@{CONNECTION_NAME}"
   }
