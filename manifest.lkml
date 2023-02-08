@@ -1,7 +1,7 @@
 project_name: "looker_blocks_qwiklab"
 
 constant: CONNECTION_NAME {
-  value: "looker_block_connection"
+  value: "bigquery_public_data_looker"
 }
 
 remote_dependency: weather {
